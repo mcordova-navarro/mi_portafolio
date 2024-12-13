@@ -1,73 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Gino</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milton Córdova - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <!-- Hero Banner -->
-  <section id="hero">
-    <h1>¡Hola, soy Milton!</h1>
-    <p>Estudiante de Ciencias de la Computación, apasionado por los algoritmos, desarrollo web y más.</p>
-    <a href="#projects">Explorar proyectos</a>
-  </section>
-
-  <!-- Navegación -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">Acerca de mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Sección: Acerca de mí -->
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>Acerca de mí</h2>
-      <p>Soy estudiante de Ciencias de la Computación, interesado en resolver problemas complejos mediante algoritmos y crear soluciones innovadoras.</p>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white text-center py-20">
+        <h1 class="text-5xl font-bold">Hi, I'm Milton Joel Córdova Navarro</h1>
+        <p class="mt-4 text-lg">Computer Science Student | Passionate about Cloud Computing and Algorithms</p>
+        <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Explore My Projects</a>
     </section>
 
-    <!-- Sección: Proyectos -->
-    <section id="projects" data-aos="fade-up">
-      <h2>Proyectos Destacados</h2>
-
-      <!-- Proyecto 1 -->
-      <div class="project" data-aos="flip-left">
-        <h3>Maze Generator</h3>
-        <img src="img/maze-generator.png" alt="Maze Generator">
-        <p>Generador de laberintos con algoritmos DFS y backtracking.</p>
-        <a href="https://github.com/tu_usuario/maze-generator" target="_blank">Ver en GitHub</a>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class="project" data-aos="zoom-in">
-        <h3>Migración Frontend</h3>
-        <img src="img/frontend-migration.png" alt="Migración Frontend">
-        <p>Migración de un frontend nativo a Preact utilizando Vite.</p>
-        <a href="https://github.com/tu_usuario/frontend-migration" target="_blank">Ver en GitHub</a>
-      </div>
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100 text-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="mt-4 text-lg">I am a second-year Computer Science student specializing in Cloud Computing, Databases, and Game Development. My passion lies in solving complex problems and building scalable, efficient solutions.</p>
+        </div>
     </section>
 
-    <!-- Sección: Contacto -->
-    <section id="contact" data-aos="fade-up">
-      <h2>Contacto</h2>
-      <p>Correo: <a href="mailto:tu_email@gmail.com">tu_email@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/tu_usuario" target="_blank">github.com/tu_usuario</a></p>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-200">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold">Highlighted Projects</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-bold">Maze Generator</h3>
+                    <p class="mt-2">Generates random mazes using Depth-First Search and backtracking algorithms.</p>
+                    <p class="mt-2 text-sm text-gray-500">Tech Stack: Python, Matplotlib, Pygame</p>
+                    <a href="https://github.com/milton/maze-generator" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View Code</a>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-bold">Cloud-Based ToDo App</h3>
+                    <p class="mt-2">A serverless ToDo application deployed on AWS with Docker and MongoDB.</p>
+                    <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, Docker, AWS Lambda</p>
+                    <a href="https://github.com/milton/todo-app" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View Code</a>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Milton. Todos los derechos reservados.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold">Contact Me</h2>
+            <p class="mt-4 text-lg">I'm always open to discussing new projects or opportunities!</p>
+            <div class="mt-6">
+                <a href="mailto:milton@example.com" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Email Me</a>
+                <a href="https://www.linkedin.com/in/milton" class="ml-4 bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-800">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/script.js"></script>
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2024 Milton Córdova. All rights reserved.</p>
+    </footer>
 </body>
 </html>
