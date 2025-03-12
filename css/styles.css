@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* General */
 body {
     font-family: 'Poppins', sans-serif;
@@ -17,16 +21,37 @@ body {
 
 /* Projects */
 .project {
-    background: #fff;
+    background: white;
     border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover img {
+    opacity: 0.85;
+}
+
+/* Mejoras en la legibilidad de los títulos */
+.project h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
 /* Footer */
