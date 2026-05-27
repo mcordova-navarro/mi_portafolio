@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         multihimnario: ["img/Himnario.jpg", "img/Himnario2.jpg", "img/Himnario3.jpg"],
         utecgo: ["img/UTEC GO.jpg", "img/UTEC GO2.jpg","img/UTEC GO3.jpg", "img/UTEC GO4.jpg","img/UTEC GO5.jpg", "img/UTEC GO6.jpg","img/UTEC GO7.jpg"],
         chaveznet: ["img/Net.jpg", "img/Net1.jpg","img/Net2.jpg","img/Net3.jpg","img/Net4.jpg","img/Net5.jpg"],
-        suffixtree: ["img/Paper.jpg", "img/Paper1.jpg","img/Paper2.jpg","img/Paper3.jpg","img/Paper4.jpg"]
+        suffixtree: ["img/Paper.jpg", "img/Paper1.jpg","img/Paper2.jpg","img/Paper3.jpg","img/Paper4.jpg"],
+        salespowerbi: ["img/dashboard.jpg", "https://opengraph.githubassets.com/1/mcordova-navarro/Sales_Report_PowerBi"]
     };
 
     document.querySelectorAll(".project").forEach((project) => {
